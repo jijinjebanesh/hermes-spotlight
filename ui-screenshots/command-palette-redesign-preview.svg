@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="760" viewBox="0 0 1040 760" fill="none">
+  <defs>
+    <linearGradient id="desk" x1="58" y1="33" x2="954" y2="731" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#27343A"/>
+      <stop offset=".52" stop-color="#121A1F"/>
+      <stop offset="1" stop-color="#080D10"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="257" y1="97" x2="789" y2="667" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1B292F"/>
+      <stop offset="1" stop-color="#121D22"/>
+    </linearGradient>
+    <linearGradient id="search" x1="292" y1="154" x2="748" y2="205" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0E181D"/>
+      <stop offset="1" stop-color="#142228"/>
+    </linearGradient>
+    <filter id="blur" x="0" y="0" width="1040" height="760" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+    <filter id="shadow" x="186" y="47" width="668" height="680" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="18"/>
+      <feGaussianBlur stdDeviation="20"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.48 0"/>
+      <feBlend in2="BackgroundImageFix" result="effect1_dropShadow"/>
+      <feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+    </filter>
+  </defs>
+
+  <!-- Softly obscured app content keeps the mockup grounded in its overlay context. -->
+  <rect width="1040" height="760" rx="28" fill="url(#desk)"/>
+  <g opacity=".56" filter="url(#blur)">
+    <rect x="48" y="52" width="944" height="87" rx="22" fill="#202E34"/>
+    <rect x="85" y="80" width="247" height="12" rx="6" fill="#96AAB1" opacity=".45"/>
+    <rect x="85" y="105" width="540" height="8" rx="4" fill="#74868D" opacity=".32"/>
+    <rect x="80" y="184" width="360" height="154" rx="20" fill="#1D292F"/>
+    <rect x="475" y="184" width="475" height="210" rx="20" fill="#202D32"/>
+    <rect x="80" y="374" width="870" height="295" rx="20" fill="#172126"/>
+  </g>
+  <rect width="1040" height="760" rx="28" fill="#071014" opacity=".47"/>
+
+  <g filter="url(#shadow)">
+    <rect x="226" y="78" width="588" height="604" rx="22" fill="url(#panel)" stroke="#52666E" stroke-opacity=".72"/>
+    <path d="M248 79H792" stroke="#D8EDF2" stroke-opacity=".13" stroke-linecap="round"/>
+
+    <!-- Brand and close affordance -->
+    <rect x="250" y="99" width="27" height="27" rx="8" fill="#75C4DF" fill-opacity=".13" stroke="#75C4DF" stroke-opacity=".25"/>
+    <path d="M263.5 105.5V119.5M256.5 112.5H270.5" stroke="#8BD6EC" stroke-width="1.6" stroke-linecap="round"/>
+    <text x="287" y="110" fill="#E8F0F4" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="650" letter-spacing=".035em">HERMES</text>
+    <text x="287" y="124" fill="#8499A2" font-family="Segoe UI, Arial, sans-serif" font-size="9" font-weight="600" letter-spacing=".13em">COMMAND CENTER</text>
+    <rect x="752" y="99" width="39" height="27" rx="8" fill="#25363D" stroke="#42565E"/>
+    <text x="771.5" y="117" text-anchor="middle" fill="#B7C7CE" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600">ESC</text>
+
+    <!-- Search -->
+    <rect x="250" y="145" width="540" height="56" rx="13" fill="url(#search)" stroke="#6BB7CE" stroke-opacity=".72"/>
+    <circle cx="273" cy="172" r="6.4" stroke="#8DB1BD" stroke-width="1.6"/>
+    <path d="M278 177L282.5 181.5" stroke="#8DB1BD" stroke-width="1.6" stroke-linecap="round"/>
+    <text x="294" y="177" fill="#7F969F" font-family="Segoe UI, Arial, sans-serif" font-size="13">Search actions, models, sessions…</text>
+    <rect x="743" y="158" width="31" height="27" rx="7" fill="#23363D"/>
+    <text x="758.5" y="176" text-anchor="middle" fill="#9BB1B9" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600">⌘ K</text>
+
+    <!-- Actions -->
+    <text x="252" y="230" fill="#93AAB3" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="700" letter-spacing=".13em">ACTIONS</text>
+    <text x="787" y="230" text-anchor="end" fill="#71868E" font-family="Segoe UI, Arial, sans-serif" font-size="9">4 shortcuts</text>
+
+    <rect x="244" y="242" width="552" height="45" rx="10" fill="#263B43" stroke="#6FC4DE" stroke-opacity=".22"/>
+    <rect x="256" y="251" width="27" height="27" rx="8" fill="#75C4DF" fill-opacity=".14"/>
+    <path d="M269.5 257V272M262 264.5H277" stroke="#8BD6EC" stroke-width="1.7" stroke-linecap="round"/>
+    <text x="294" y="269" fill="#F0F6F8" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600">New session</text>
+    <text x="777" y="269" text-anchor="end" fill="#A3B5BC" font-family="Consolas, monospace" font-size="10">Ctrl+N</text>
+
+    <rect x="256" y="298" width="27" height="27" rx="8" fill="#1B2B31"/>
+    <circle cx="269.5" cy="312.5" r="7" stroke="#78BFD4" stroke-width="1.5"/>
+    <circle cx="269.5" cy="312.5" r="2.4" stroke="#78BFD4" stroke-width="1.3"/>
+    <text x="294" y="316" fill="#CFDCE1" font-family="Segoe UI, Arial, sans-serif" font-size="12">Settings</text>
+    <text x="777" y="316" text-anchor="end" fill="#82979F" font-family="Consolas, monospace" font-size="10">Ctrl+,</text>
+
+    <rect x="256" y="344" width="27" height="27" rx="8" fill="#1B2B31"/>
+    <rect x="266.5" y="350" width="6" height="12" rx="3" stroke="#78BFD4" stroke-width="1.5"/>
+    <path d="M263.5 357C263.5 361 266 363 269.5 363C273 363 275.5 361 275.5 357M269.5 363V367M266.5 367H272.5" stroke="#78BFD4" stroke-width="1.5" stroke-linecap="round"/>
+    <text x="294" y="362" fill="#CFDCE1" font-family="Segoe UI, Arial, sans-serif" font-size="12">Voice mode</text>
+    <text x="777" y="362" text-anchor="end" fill="#82979F" font-family="Consolas, monospace" font-size="10">Ctrl+Shift+E</text>
+
+    <rect x="256" y="390" width="27" height="27" rx="8" fill="#1B2B31"/>
+    <circle cx="269.5" cy="403.5" r="7" stroke="#78BFD4" stroke-width="1.5"/>
+    <path d="M269.5 400.5V404M269.5 407H269.55" stroke="#78BFD4" stroke-width="1.6" stroke-linecap="round"/>
+    <text x="294" y="408" fill="#CFDCE1" font-family="Segoe UI, Arial, sans-serif" font-size="12">Guide &amp; shortcuts</text>
+    <path d="M250 432H790" stroke="#C6D9DF" stroke-opacity=".09"/>
+
+    <!-- Recent sessions -->
+    <text x="252" y="457" fill="#93AAB3" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="700" letter-spacing=".13em">RECENT SESSIONS</text>
+    <text x="787" y="457" text-anchor="end" fill="#75C4DF" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600">View all  ›</text>
+
+    <rect x="244" y="469" width="552" height="50" rx="10" fill="#202F35"/>
+    <rect x="256" y="480" width="27" height="27" rx="8" fill="#75C4DF" fill-opacity=".1"/>
+    <path d="M262 486.5H277V497.5H267L263.5 501V497.5H262V486.5Z" stroke="#82C8DD" stroke-width="1.4" stroke-linejoin="round"/>
+    <text x="294" y="490" fill="#E1EAEE" font-family="Segoe UI, Arial, sans-serif" font-size="11.5" font-weight="550">Exploring Hermes Agent features</text>
+    <text x="294" y="506" fill="#82979F" font-family="Segoe UI, Arial, sans-serif" font-size="9.5">Today  ·  14:49</text>
+    <path d="M777 494L780 497L777 500" stroke="#8198A1" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <rect x="256" y="529" width="27" height="27" rx="8" fill="#1B2B31"/>
+    <path d="M262 535.5H277V546.5H267L263.5 550V546.5H262V535.5Z" stroke="#718A94" stroke-width="1.3" stroke-linejoin="round"/>
+    <text x="294" y="545" fill="#C2D0D6" font-family="Segoe UI, Arial, sans-serif" font-size="11.5">Session 2026-10-18 14:49</text>
+    <text x="777" y="545" text-anchor="end" fill="#71868E" font-family="Segoe UI, Arial, sans-serif" font-size="9.5">2 min ago</text>
+
+    <rect x="256" y="570" width="27" height="27" rx="8" fill="#1B2B31"/>
+    <path d="M262 576.5H277V587.5H267L263.5 591V587.5H262V576.5Z" stroke="#718A94" stroke-width="1.3" stroke-linejoin="round"/>
+    <text x="294" y="586" fill="#C2D0D6" font-family="Segoe UI, Arial, sans-serif" font-size="11.5">Planning a new project structure</text>
+    <text x="777" y="586" text-anchor="end" fill="#71868E" font-family="Segoe UI, Arial, sans-serif" font-size="9.5">Yesterday</text>
+
+    <rect x="256" y="611" width="27" height="27" rx="8" fill="#1B2B31"/>
+    <path d="M262 617.5H277V628.5H267L263.5 632V628.5H262V617.5Z" stroke="#718A94" stroke-width="1.3" stroke-linejoin="round"/>
+    <text x="294" y="627" fill="#C2D0D6" font-family="Segoe UI, Arial, sans-serif" font-size="11.5">Fix settings theme and contrast</text>
+    <text x="777" y="627" text-anchor="end" fill="#71868E" font-family="Segoe UI, Arial, sans-serif" font-size="9.5">Yesterday</text>
+
+    <!-- Keyboard footer -->
+    <path d="M227 650H813" stroke="#C6D9DF" stroke-opacity=".11"/>
+    <g font-family="Segoe UI, Arial, sans-serif" font-size="9.5" fill="#91A5AD">
+      <rect x="250" y="661" width="27" height="15" rx="4" fill="#26363D" stroke="#50616A" stroke-opacity=".65"/><text x="263.5" y="672" text-anchor="middle" fill="#D2DEE2" font-size="8.5">↑↓</text><text x="283" y="672">navigate</text>
+      <rect x="335" y="661" width="34" height="15" rx="4" fill="#26363D" stroke="#50616A" stroke-opacity=".65"/><text x="352" y="672" text-anchor="middle" fill="#D2DEE2" font-size="8.5">↵</text><text x="375" y="672">open</text>
+      <rect x="418" y="661" width="31" height="15" rx="4" fill="#26363D" stroke="#50616A" stroke-opacity=".65"/><text x="433.5" y="672" text-anchor="middle" fill="#D2DEE2" font-size="8.5">esc</text><text x="455" y="672">close</text>
+    </g>
+  </g>
+</svg>

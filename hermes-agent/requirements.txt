@@ -1,0 +1,11 @@
+# Hermes Agent CLI Dependencies
+# Install with: pip install -r requirements.txt
+
+# For audio transcription (Whisper ASR)
+openai-whisper>=20231117
+
+# For text-to-speech (edge-tts - free, no API key)
+edge-tts>=6.1.0
+
+# Optional: PyAudio for clap detector
+pyaudio>=0.2.13

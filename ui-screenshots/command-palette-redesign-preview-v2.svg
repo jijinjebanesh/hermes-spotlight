@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" fill="none">
+  <defs>
+    <linearGradient id="editor" x1="350" y1="0" x2="1100" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#17191B"/>
+      <stop offset="1" stop-color="#101214"/>
+    </linearGradient>
+    <filter id="panelShadow" x="1060" y="39" width="520" height="500" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="12"/>
+    </filter>
+  </defs>
+
+  <!-- Quiet editor context, matching the compact floating overlay use case. -->
+  <rect width="1600" height="900" rx="10" fill="#101214"/>
+  <rect width="1600" height="38" fill="#181A1C"/>
+  <path d="M0 38H1600" stroke="#292C2E"/>
+  <path d="M24 11L14 19L24 27" stroke="#168FCB" stroke-width="3" stroke-linejoin="round"/>
+  <text x="53" y="24" fill="#A8ACAE" font-family="Segoe UI, Arial, sans-serif" font-size="13">File　 Edit　 Selection　 View　 Go　 Run　 Terminal　 Help</text>
+  <rect x="522" y="7" width="532" height="24" rx="5" fill="#202326" stroke="#303437"/>
+  <text x="539" y="23" fill="#888F92" font-family="Segoe UI, Arial, sans-serif" font-size="12">jaip</text>
+  <rect y="39" width="360" height="821" fill="#181A1C"/>
+  <path d="M360 39V860M0 860H1600" stroke="#2A2D2F"/>
+  <rect x="0" y="39" width="48" height="821" fill="#16181A"/>
+  <path d="M14 61H34V83H14zM14 107L24 97L34 107M14 144L24 134L34 144" stroke="#8A9194" stroke-width="1.7" stroke-linejoin="round"/>
+  <text x="68" y="70" fill="#D2D5D6" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600">EXPLORER</text>
+  <text x="68" y="104" fill="#BFC4C6" font-family="Segoe UI, Arial, sans-serif" font-size="13">⌄　jaip</text>
+  <text x="88" y="133" fill="#AEB4B6" font-family="Segoe UI, Arial, sans-serif" font-size="12">⌄　ui-screenshots</text>
+  <g fill="#9DA5A8" font-family="Segoe UI, Arial, sans-serif" font-size="12">
+    <text x="105" y="165">nous-flow-turn-1.png</text><text x="105" y="192">nous-flow-turn-2.png</text>
+    <text x="105" y="219">nous-flow-turn-3.png</text><text x="105" y="246">skill-usage-redesign.svg</text>
+    <text x="105" y="273">command-palette-redesign-preview-v2.svg</text>
+  </g>
+  <rect x="52" y="229" width="301" height="25" rx="4" fill="#272A2C"/>
+  <text x="105" y="246" fill="#D6D9DA" font-family="Segoe UI, Arial, sans-serif" font-size="12">skill-usage-redesign.svg</text>
+
+  <!-- Soft editor content behind the overlay. -->
+  <rect x="360" y="39" width="1240" height="42" fill="#1B1D1F"/>
+  <text x="389" y="65" fill="#D3D6D7" font-family="Segoe UI, Arial, sans-serif" font-size="13">Welcome</text>
+  <text x="503" y="65" fill="#858C8F" font-family="Segoe UI, Arial, sans-serif" font-size="13">Codex Diff</text>
+  <text x="448" y="255" fill="#D2D5D6" font-family="Segoe UI, Arial, sans-serif" font-size="29" font-weight="550">Visual Studio Code</text>
+  <text x="450" y="287" fill="#90989B" font-family="Segoe UI, Arial, sans-serif" font-size="17">Editing evolved</text>
+  <text x="450" y="338" fill="#D1D5D6" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="600">Start</text>
+  <g fill="#2F9FD0" font-family="Segoe UI, Arial, sans-serif" font-size="14">
+    <text x="456" y="376">＋　New File…</text><text x="456" y="409">◉　Open File…</text>
+    <text x="456" y="442">▱　Open Folder…</text><text x="456" y="475">⌘　Clone Git Repository…</text>
+  </g>
+  <text x="843" y="338" fill="#D1D5D6" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="600">Walkthroughs</text>
+  <rect x="843" y="357" width="213" height="79" rx="7" fill="#282B2D"/>
+  <text x="860" y="384" fill="#D1D5D6" font-family="Segoe UI, Arial, sans-serif" font-size="13">Get started with VS Code</text>
+  <text x="860" y="408" fill="#969DA0" font-family="Segoe UI, Arial, sans-serif" font-size="11">Customize your editor and learn</text>
+  <rect x="843" y="450" width="213" height="50" rx="7" fill="#25282A"/>
+  <text x="860" y="480" fill="#C9CECF" font-family="Segoe UI, Arial, sans-serif" font-size="13">Learn the fundamentals</text>
+
+  <!-- Compact palette: familiar layout, refined spacing and scrollbar inset. -->
+  <rect x="1086" y="65" width="468" height="445" rx="15" fill="#000" opacity=".34" filter="url(#panelShadow)"/>
+  <rect x="1084" y="61" width="468" height="445" rx="14" fill="#171D20" stroke="#3B4549"/>
+  <rect x="1085" y="62" width="466" height="52" rx="13" fill="#1B2226"/>
+  <path d="M1085 114H1551" stroke="#303A3E"/>
+  <circle cx="1105" cy="87" r="5.8" stroke="#91A8B1" stroke-width="1.5"/>
+  <path d="M1109.5 91.5L1114 96" stroke="#91A8B1" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="1123" y="92" fill="#E2E8EA" font-family="Segoe UI, Arial, sans-serif" font-size="13">Search actions, models, sessions…</text>
+  <text x="1524" y="92" text-anchor="end" fill="#74858B" font-family="Segoe UI, Arial, sans-serif" font-size="10">Ctrl+K</text>
+
+  <text x="1104" y="141" fill="#8B989D" font-family="Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" letter-spacing="1.15">ACTIONS</text>
+  <rect x="1098" y="151" width="423" height="36" rx="7" fill="#25353B"/>
+  <path d="M1114 169H1124M1119 164V174" stroke="#78BDD1" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="1138" y="173" fill="#E5ECEE" font-family="Segoe UI, Arial, sans-serif" font-size="11.5" font-weight="550">New session</text>
+  <text x="1502" y="173" text-anchor="end" fill="#8D9DA2" font-family="Consolas, monospace" font-size="9.5">Ctrl+N</text>
+
+  <circle cx="1118" cy="209.5" r="6" stroke="#73B4C7" stroke-width="1.2"/>
+  <circle cx="1118" cy="209.5" r="2" stroke="#73B4C7" stroke-width="1.1"/>
+  <text x="1138" y="213" fill="#D1DADD" font-family="Segoe UI, Arial, sans-serif" font-size="11.5">Settings</text>
+  <text x="1502" y="213" text-anchor="end" fill="#7F8F94" font-family="Consolas, monospace" font-size="9.5">Ctrl+,</text>
+
+  <rect x="1116" y="232" width="5" height="11" rx="2.5" stroke="#73B4C7" stroke-width="1.2"/>
+  <path d="M1113 238V240C1113 243 1115 245 1118.5 245C1122 245 1124 243 1124 240V238M1118.5 245V249M1115.5 249H1121.5" stroke="#73B4C7" stroke-width="1.2" stroke-linecap="round"/>
+  <text x="1138" y="244" fill="#D1DADD" font-family="Segoe UI, Arial, sans-serif" font-size="11.5">Voice mode</text>
+  <text x="1502" y="244" text-anchor="end" fill="#7F8F94" font-family="Consolas, monospace" font-size="9.5">Ctrl+Shift+E</text>
+
+  <circle cx="1118" cy="277" r="6" stroke="#73B4C7" stroke-width="1.2"/>
+  <path d="M1118 274V277.5M1118 280H1118.1" stroke="#73B4C7" stroke-width="1.35" stroke-linecap="round"/>
+  <text x="1138" y="281" fill="#D1DADD" font-family="Segoe UI, Arial, sans-serif" font-size="11.5">Guide &amp; Shortcuts</text>
+
+  <path d="M1099 300H1520" stroke="#303A3E"/>
+  <text x="1104" y="324" fill="#8B989D" font-family="Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" letter-spacing="1.15">SESSIONS</text>
+  <rect x="1098" y="336" width="423" height="36" rx="7" fill="#25353B"/>
+  <path d="M1112 347H1124V357H1116L1113 360V357H1112V347Z" stroke="#79BBD0" stroke-width="1.15" stroke-linejoin="round"/>
+  <text x="1138" y="359" fill="#E1E9EB" font-family="Segoe UI, Arial, sans-serif" font-size="11">Exploring Hermes Agent features</text>
+
+  <path d="M1112 386H1124V396H1116L1113 399V396H1112V386Z" stroke="#74868C" stroke-width="1.1" stroke-linejoin="round"/>
+  <text x="1138" y="398" fill="#C1CDD1" font-family="Segoe UI, Arial, sans-serif" font-size="11">Session 2026-10-18 14:49</text>
+  <path d="M1112 419H1124V429H1116L1113 432V429H1112V419Z" stroke="#74868C" stroke-width="1.1" stroke-linejoin="round"/>
+  <text x="1138" y="431" fill="#C1CDD1" font-family="Segoe UI, Arial, sans-serif" font-size="11">Session 2026-10-18 14:49</text>
+
+  <!-- Scroll track is inset from the card border and belongs to the list. -->
+  <rect x="1534" y="125" width="3" height="290" rx="1.5" fill="#252F33"/>
+  <rect x="1534" y="126" width="3" height="107" rx="1.5" fill="#536268"/>
+
+  <path d="M1085 463H1551" stroke="#303A3E"/>
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#89989D">
+    <rect x="1098" y="476" width="26" height="17" rx="4" fill="#242E32" stroke="#465358"/><text x="1111" y="488" text-anchor="middle" fill="#C7D1D4" font-size="8">↑↓</text><text x="1130" y="488">navigate</text>
+    <rect x="1181" y="476" width="23" height="17" rx="4" fill="#242E32" stroke="#465358"/><text x="1192.5" y="488" text-anchor="middle" fill="#C7D1D4" font-size="8">↵</text><text x="1210" y="488">select</text>
+    <rect x="1260" y="476" width="27" height="17" rx="4" fill="#242E32" stroke="#465358"/><text x="1273.5" y="488" text-anchor="middle" fill="#C7D1D4" font-size="8">esc</text><text x="1294" y="488">close</text>
+  </g>
+</svg>

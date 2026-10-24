@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A fast, keyboard-first Hermes assistant for Windows" />
+    <meta name="color-scheme" content="light dark" />
+    <title>Hermes Spotlight</title>
+    <style>
+      /* Prevent white flash on load */
+      html, body { background-color: transparent; margin: 0; padding: 0; }
+    </style>
+    <script>
+      try {
+        const saved = JSON.parse(localStorage.getItem('hermes-spotlight-storage-v1') || 'null');
+        const mode = saved?.state?.theme || 'light';
+        document.documentElement.dataset.theme = mode === 'system'
+          ? (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
+          : mode;
+      } catch { document.documentElement.dataset.theme = 'light'; }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/renderer/main.tsx"></script>
+  </body>
+</html>
