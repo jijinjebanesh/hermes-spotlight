@@ -4798,7 +4798,15 @@ select:focus-visible {
 
 .tool-detail-section {
   display: flex;
+  min-width: 0;
   flex-direction: column;
+}
+
+.tool-detail-section > .code-block {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  margin-inline: 0;
 }
 
 .tool-detail-label {
