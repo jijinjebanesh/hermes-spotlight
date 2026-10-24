@@ -169,11 +169,6 @@ const ToolActivityStep: React.FC<{
       <span className="hermes-tool-step__copy">
         <span className="hermes-tool-step__title">{title}</span>
         {detail && <span className="hermes-tool-step__detail" title={detail}>{detail}</span>}
-        {terminalOutput && (
-          <div className="hermes-tool-step__output">
-            <CodeBlock code={terminalOutput} language="text" />
-          </div>
-        )}
         {isError && entry.complete?.error && (
           <span className="hermes-tool-step__error">{entry.complete.error}</span>
         )}
@@ -201,6 +196,12 @@ const ToolActivityStep: React.FC<{
           )}
         </AnimatePresence>
       </span>
+
+      {terminalOutput && (
+        <div className="hermes-tool-step__output">
+          <CodeBlock code={terminalOutput} language="text" />
+        </div>
+      )}
 
       <span className="hermes-tool-step__timing" aria-label={isError ? 'Failed' : isRunning ? 'In progress' : duration != null ? `Completed in ${duration.toFixed(1)} seconds` : 'Completed'}>
         {isError ? (
