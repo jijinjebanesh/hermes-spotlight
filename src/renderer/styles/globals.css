@@ -7062,6 +7062,10 @@ body { color: var(--text-primary); }
 .hermes-tool-step__title { overflow: hidden; color: var(--tool-card-text); font-size: 12.5px; font-weight: 600; text-overflow: ellipsis; white-space: nowrap; }
 .hermes-tool-step__detail { overflow: hidden; color: var(--tool-card-muted); font-size: 11px; line-height: 1.35; text-overflow: ellipsis; white-space: nowrap; }
 .hermes-tool-step__output { min-width: 0; max-width: 100%; margin-top: 6px; overflow: hidden; border-radius: var(--radius-tool, 8px); }
+.hermes-tool-step:has(.hermes-tool-step__output) { grid-template-rows: auto auto; }
+.hermes-tool-step:has(.hermes-tool-step__output) .hermes-tool-step__copy { grid-column: 3; grid-row: 1; }
+.hermes-tool-step:has(.hermes-tool-step__output) .hermes-tool-step__output { grid-column: 1 / -1; grid-row: 2; width: 100%; }
+.hermes-tool-step:has(.hermes-tool-step__output) .hermes-tool-step__timing { grid-column: 4; grid-row: 1; }
 .hermes-tool-step__error { overflow: hidden; color: var(--tool-card-error); font-size: 10.5px; text-overflow: ellipsis; white-space: nowrap; }
 
 .hermes-tool-step__timing {
@@ -9254,22 +9258,24 @@ html[data-theme="light"] .spotlight-app.settings-open .settings-content-header {
 /* Keep captured terminal output readable inside the narrow voice response card. */
 .spotlight-app .echo-answer-body .hermes-tool-step:has(.hermes-tool-step__output) {
   position:relative;
-  grid-template-columns:20px 30px minmax(0,1fr);
+  grid-template-columns:20px 30px minmax(0,1fr) auto;
   align-items:start;
 }
 .spotlight-app .echo-answer-body .hermes-tool-step:has(.hermes-tool-step__output) .hermes-tool-step__timing {
-  position:absolute;
-  top:9px;
-  right:1px;
-  z-index:1;
+  grid-column:4;
+  grid-row:1;
 }
 .spotlight-app .echo-answer-body .hermes-tool-step:has(.hermes-tool-step__output) .hermes-tool-step__copy {
   box-sizing:border-box;
   width:100%;
+  grid-column:3;
+  grid-row:1;
 }
 .spotlight-app .echo-answer-body .hermes-tool-step__output {
   box-sizing:border-box;
   align-self:stretch;
+  grid-column:1 / -1;
+  grid-row:2;
   width:100%;
   min-width:0;
   max-height:150px;
